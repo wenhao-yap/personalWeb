@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>wenhao-yap</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/modernizr.2.5.3.min.js"></script>  
+</head>
+<body>
+
+<canvas></canvas>
+<div class="ui container wrapper">
+    <div class="outerFrame">
+      <div class="ui grid">
+        <div class="box1">
+          <div id="flipbook">
+            <div class="hard">
+              <h1 class='frontTitle'>WDI Projects</h1> 
+            </div>
+            <div>
+              <div class='bookContainer gradient'></div>
+            </div> 
+            <div>
+              <div class='bookContainer gradient'>
+                <h1 class="ui center aligned header"></i>Projects</h1>
+                <div class="ui bulleted list">
+                  <div class="item"><a href="javascript:$('#flipbook').turn('page',4)">Dangerous Jungle</a></div>
+                  <div class="item"><a href="javascript:$('#flipbook').turn('page',6)">GuitarTabs</a></div>
+                  <div class="item"><a href="javascript:$('#flipbook').turn('page',8)">Quest</a></div>
+                  <div class="item"><a href="javascript:$('#flipbook').turn('page',10)">SimpleTory</a></div>
+                </div> 
+                <span class='pageNum'>1</span>             
+              </div>
+            </div>                        
+            <div>
+              <div class='bookContainer gradient'>              
+                <h1 class="ui center aligned header"></i>Dangerous Jungle</h1>
+                <h2 class="ui header">Description</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Targeted Audience: Casual Gamers</div>
+                  <div class="item">Purpose: A 2D platform browser game where the avatar overcome obstacles as he escape a jungle.</div>
+                </div>                 
+                <h2 class="ui header">Features</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Multiplayer mode</div>
+                  <div class="item">Parallax background for immersion</div>      
+                  <div class="item">Sprites animation</div> 
+                  <div class="item">Collision mechanics</div>  
+                  <div class="item">Difficulty increases with time</div>             
+                </div>                 
+                <p><strong>Notable tech:</strong> HTML5 Canvas, Bootstrap</p>
+                <span class='pageNum'>2</span>                                                
+              </div>
+            </div>
+            <div>
+              <div class='bookContainer gradient'>                   
+                <h2 class="ui header">Thoughts</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Spritesheet for sprites animation</div>
+                  <div class="item">Keyframe animations</div>
+                  <div class="item">Never use classes. Define too many global variables</div>
+                  <div class="item">Never use ES6 synthax</div> 
+                  <div class="item">Usage of for loops instead of better and faster functions like map and forEach </div>                  
+                </div> 
+                <a class="ui black compact button" href='https://github.com/wenhao-yap/Project1_wdi' target="_blank">
+                  <i class="github icon"></i>Github
+                </a>   
+                <a class="ui black compact button" href='https://wenhao-yap.github.io/Project1_wdi/' target="_blank">
+                  <i class="linkify icon"></i>Link
+                </a> 
+                <a class="ui black compact button" href="javascript:$('#flipbook').turn('page',2)">
+                  <i class="arrow left icon"></i>content page
+                </a> 
+                <span class='pageNum Odd'>3</span>                                                                                                  
+              </div>
+            </div>            
+            <div>
+              <div class='bookContainer gradient'>
+                <h1 class="ui center aligned header">GuitarTabs</h1>
+                <h2 class="ui header">Description</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Targeted Audience: Music Enthusiasts</div>
+                  <div class="item">Purpose: Sharing guitar tabs,respective video guides and lyrics</div>
+                </div>
+                <h2 class="ui header">Features</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Minimalistic and clean design</div>
+                  <div class="item">Search engine on internal and external tab libraries like Songsterr</div>
+                  <div class="item">Favourite system</div>
+                  <div class="item">Billboard chart to check popular songs</div>
+                  <div class="item">Bcrypt password to hash</div>                   
+                </div>                
+                <span class='pageNum'>4</span>                               
+              </div>
+            </div>
+            <div>
+              <div class='bookContainer gradient'>
+                <p><strong>Notable tech:</strong> Semantic UI, Node.js, Handlebars, PostgresSQl</p>                
+                <h2 class="ui header">Thoughts</h2>
+                <div class="ui bulleted list">
+                  <div class="item">My first full-stack web application and experience with REST</div>
+                  <div class="item">Did not use Ajax for requests except favourites system</div>  
+                  <div class="item">Did not use any pagination for the music library</div>  
+                  <div class="item">Reliant on jQuery dataTables for tables</div>
+                  <div class="item">Process Flow: To better plan REST routes and CSS grid </div>  
+                  <div class="item">Usage of for loops instead of better and faster functions like map and forEach </div>         
+                </div>
+                <a class="ui black compact button" href='https://github.com/wenhao-yap/Project2_wdi' target="_blank">
+                  <i class="github icon"></i>Github</a>
+                </a>  
+                <a class="ui black compact button" href='https://guitar-tabs.herokuapp.com/' target="_blank">
+                  <i class="linkify icon"></i>Link
+                </a> 
+                <a class="ui black compact button" href="javascript:$('#flipbook').turn('page',2)">
+                  <i class="arrow left icon"></i>content page
+                </a> 
+                <span class='pageNum Odd'>5</span>                                                                                 
+              </div>
+            </div>  
+            <div>
+              <div class='bookContainer gradient'>
+                <h1 class="ui center aligned header">Quest</h1>
+                <h2 class="ui header">Description</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Targeted Audience: E-Shoppers</div>
+                  <div class="item">Purpose: search aggregator that consolidates best product prices from major e-commerce platforms like Lazada</div>
+                </div>                
+                <h2 class="ui header">Features</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Admin Dashboard</div>
+                  <div class="item">Popular products from each platform</div>
+                   <div class="item">Separate layouts(i.e. scripts, css) for admin and normal user</div> 
+                   <div class="item">Ajax calls and making a loader</div>
+                   <div class="item">Powered by custom web scrappers</div>
+                   <div class="item">Favourite system</div>                
+                </div>                 
+                <span class='pageNum'>6</span>             
+              </div>
+            </div>
+            <div>
+              <div class='bookContainer gradient'>
+                <p><strong>Notable tech:</strong> Ruby on Rails, Bootstrap, Selenium, Mechanize, PostgresSQl</p>                 
+                <h2 class="ui header">Team Members</h2>
+                <p>Edmund, Justin, Zack</p>                    
+                <h2 class="ui header">Thoughts</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Learning how to use Git merge and branch, and working in a team</div> 
+                  <div class="item">Experience with automation software</div> 
+                  <div class="item">Devise made authentication really simple but customizing it takes time</div>
+                  <div class="item">Custom web scrappers have its limitations</div>
+                </div> 
+                <a class="ui black compact button" href='https://github.com/wenhao-yap/Project3_wdi' target="_blank">
+                  <i class="github icon"></i>Github
+                </a> 
+                <a class="ui black compact button" href="javascript:$('#flipbook').turn('page',2)">
+                  <i class="arrow left icon"></i>content page
+                </a> 
+                <span class='pageNum Odd-fix'>7</span>                                                                                   
+              </div>
+            </div>                       
+            <div>
+              <div class='bookContainer gradient'>
+                <h1 class="ui center aligned header">SimpleTory</h1>
+                <h2 class="ui header">Description</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Targeted Audience: Business</div>
+                  <div class="item">Purpose: Management system to track inventories record and invoices</div>
+                </div>
+                <h2 class="ui header">Features</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Computation of statistics such as total revenue earned and list of popular products</div>                 
+                </div>                
+                <p><strong>Notable tech:</strong> React, Semantic UI, Node.js, PostgresSQl, Lodash</p>  
+                <span class='pageNum'>8</span>                             
+              </div>
+            </div>
+            <div>
+              <div class='bookContainer gradient'>
+                <h2 class="ui header">Thoughts</h2>
+                <div class="ui bulleted list">
+                  <div class="item">Backend function as API</div> 
+                  <div class="item">Ajax calls</div>   
+                  <div class="item">JSX token for authentication</div>  
+                  <div class="item">Implemented pagination</div>
+                  <div class="item">Did not rely on table libraries like dataTables</div>
+                  <div class="item">Usage of better functions like map instead of for loops</div>  
+                  <div class="item">Lodash is powerful</div>  
+                </div> 
+                <a class="ui black compact button" href='https://github.com/wenhao-yap/project4_wdi' target="_blank">
+                  <i class="github icon"></i>Github
+                </a>  
+                <a class="ui black compact button" href="javascript:$('#flipbook').turn('page',2)">
+                  <i class="arrow left icon"></i>content page
+                </a> 
+                <span class='pageNum Odd-fix'>9</span>                                                                               
+              </div>
+            </div>                                                                                     
+            <div class="hard lastPage">
+            </div>
+          </div>
+        </div>
+        <div class="box2">
+          <h2 class="ui header inverted" style='margin-top: 100px;'>Justin Yap</h2>
+          <div class="ui black label">Developer</div>
+          <div class="ui black label">Design enthusiast</div>
+          <div style="margin-top: 10px;">
+            <strong>Frontend:</strong> 
+            <p>React, jQuery, Semantic UI, Bootstrap, Javascript, HTML, CSS </p>
+            <strong>Backend:</strong> 
+            <p>NodeJS, Ruby on Rails, Postgres SQL, Java</p>
+             <strong>Others:</strong> 
+            <p>Watir, Selenium, Mechanize</p>
+          </div><br>    
+          <button class="ui inverted compact button">
+            <a href='https://github.com/wenhao-yap' target="_blank">
+            <i class="github icon"></i>Github</a>
+          </button>
+          <button class="ui inverted compact button">
+            <a href='http://www.linkedin.com/in/yap-wen-hao' target="_blank">
+            <i class="linkedin icon"></i>Linkedin</a>
+          </button>                     
+    </div>
+  </div>
+</div> 
+</div>
+
+
+
+
+
+<!--   Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
